@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package user_login;
+
+option go_package = "./user_login";
+
+message Request {
+  //用户名
+  string user_name = 1;
+  //密码
+  string password = 2;
+}
+
+message Response {
+    int32 id = 1;
+}
+
+service user_login {
+  rpc userLogin(Request) returns (Response);
+}
