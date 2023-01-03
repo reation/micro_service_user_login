@@ -1,0 +1,8 @@
+Name: userlogin.rpc
+ListenOn: 0.0.0.0:8080
+Etcd:
+  Hosts:
+  - 49.233.55.149:2379
+  Key: userlogin.rpc
+Mysql:
+  DataSource:root:19861029@tcp(152.136.253.191:3306)/shop_microservice_user?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
